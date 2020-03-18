@@ -1,199 +1,84 @@
-/* Global Layout Set-up */
-* { 
-  box-sizing: border-box;
-}
-  
 body {
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
-  color: #FFFFFF
-  background: #f7f5f0;
-}
-/* Link Styles */
+    background: #ffffff; 
+    margin: 0; 
+    padding: 20;
+}           
 
-a {
-  text-decoration: none;
-  color: #0499ff;
-}
-a:hover {
-  color: #6633ff;
-}
+           
 
-h3 {
-  font-family: "Impact", Charcoal, sans-serif;
-  color: white;  
-  text-shadow: 4px 4px 4px #3399CC;
-} 
-
-/* Accordian Settings */
-.accordion {
-    background-color: #FFFFFF;
-    color: #white;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
+#header {
+    width: 1208px; 	
+    height: 50px; 	
+    margin: 0; 
+    padding: 6px; 
+    border: 0; 
+    background: #000000;
+    color: #FFFFFF;
+    font-family: 'Tangerine', serif;
+    font-size: 48px;
 }
 
-.active, .accordion:hover {
-    background-color: #white;
-}
+sarahscara1979 {
+    text-shadow: 10px 10px 10px #aaa;
+}     
 
-.panel {
-    padding: 0 18px;
-    background-color: white;
-    display: none;
-    overflow: hidden;
-} 
-
-/* Section Styles */
-
-.main-nav {
-  width: 100%;
-  background: black;
-  min-height: 30px;
-  padding: 10px;
-  position: fixed;
-  text-align: center;
-}
-.nav {
-  display: flex;
-  justify-content: space-around;
-  font-weight: 700;
-  list-style-type: none;
-  margin: 0 auto;
-  padding: 0;
-}
-.nav .name {
-  display: none;
-}
-.nav li {
-  padding: 5px 10px 10px 10px;
-}
-.nav a {
-  transition: all .5s;
-}
-.nav a:hover {
-  color: white
-}
-
-header {
-  text-align: center;
-  background: url('https://static.zerochan.net/Zelda.no.Densetsu%3A.Mujura.no.Kamen.full.1540990.jpg') no-repeat top center ;
+#header2 {
+  background-position: center;
+  background: url('https://static.zerochan.net/Zelda.no.Densetsu%3A.Mujura.no.Kamen.full.1540990.jpg') no-repeat top center;
   background-size: cover;
+  height: 560px;
+  width: 1220px;
   overflow: hidden;
-  padding-top: 200px;
-}
-header {
-  line-height: 1.5;
-}
-header .profile-image {
-  margin-top: 50x;
-  width: 120x;
-  height: 120px;
-  border-radius: 100%;
-  border: 3px solid white;
-  transition: all .5s;
-}
-header .profile-image:hover {
-  transform: scale(3) rotate(360deg);
-}
-.tag {
-  background-color: #efefef;
-  color: black;
-  padding: 10px;
-  border-radius: 5px;
-  display: table;
-  margin: 10px auto;
-} 
-.location {
-  background-color: #222;
-  color: yellow;
-  font-family: "Arial", Helvetica, sans-serif;
-}
-.card {
-  margin: 30px;
-  padding: 20px 40px 40px;
-  max-width: 500px;
-  text-align: left;
-  background: #fff;
-  border-bottom: 4px solid #ccc;
-  border-radius: 6px;
-}
-.card:hover {
-  border-color: #ff99ff;
-}
-
-ul.skills {
-  padding: 0;
-  text-align: center;
-}
-
-.skills li {
-  border-radius: 6px;
-  display: inline-block;
-  background: #ff9904;
-  color: white;
-  padding: 5px 10px;
-  margin: 2px;
-}
-
-.skills li:nth-child(odd) {
-  background: #0399ff;
-}
-
-footer {
-  width: 100%;
-  min-height: 10px;
-  padding: 20px 0 40px 20px;
-}
-
-footer .copyright {
-  top: -8px;
-  margin-right: 20px;
-  font-size: .75em;
-}
-
-footer ul {
-  list-style-type: none;
-  margin: 0;
+  border: 0;
   padding: 0;
 }
 
-footer ul li {
-  display: inline-block;
+#sidebar2 {
+    width: 250px; 
+    height: 510px; 	
+    margin: 25px; 
+    padding: 0; 
+    border: 0; 
+    float: right; 
+    background: #4682B4;
+    opacity: 0.5;
+}                  
+
+ul {
+  list-style-image: url('https://i.ibb.co/hMrfxMz/Legendof-Zelda-Master-Key.png');
 }
 
-a.social {
-  display: inline-block;
-  text-indent: -9999px;
-  margin-left: 5px;
-  width: 30px;
-  height: 30px;
-  background-size: 30px 30px;
-  opacity: .5;
-  transition: all .25s;
-}
-a.twitter {
-  background-image: url(images/twitter.svg);
-}
-a.linkedin {
-  background-image: url(images/linkedin.svg);
-}
-a.github {
-  background-image: url(images/github.svg);
-}
-a.social:hover {
-  opacity: 1;
-}
-.clearfix {
-  clear: both;
-}
+#sidebar {
+    width: 200px; 
+    height: 400px; 	
+    margin: 0; 
+    padding: 0; 
+    border: 0; 
+    float: left; 
+    background: #f0e811;
+}           
+
+#content {
+    width: 700px; 
+    height: 400px; 	
+    margin: 0; 
+    padding: 0; 
+    border: 0; 
+    float: left; 
+    background: #8be0ef;
+}           
+
+#footer {
+    width: 900px; 	
+    height: 70px; 	
+    margin: 0; 
+    padding: 0; 
+    border: 0;  
+    float: left; 
+    background: #000000;
+    color:#FFFFFF; 
+    clear:both;
+}                            
 
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
